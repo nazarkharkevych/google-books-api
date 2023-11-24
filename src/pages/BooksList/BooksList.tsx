@@ -36,7 +36,7 @@ const BooksList = () => {
       <Container maxWidth={'xl'} sx={{
         textAlign: 'center'
       }}>
-        {!!totalCount && (
+        {(!!totalCount && !isLoading) && (
           <BooksCount count={totalCount} />
         )}
         {isLoading && (

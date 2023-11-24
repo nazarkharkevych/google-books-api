@@ -26,7 +26,7 @@ const StyledSearch = styled('div')(({ theme }) => ({
     backgroundColor: alpha(theme.palette.common.white, 1),
   },
   width: '100%',
-  [theme.breakpoints.up('md')]: {
+  [theme.breakpoints.up('sm')]: {
     maxWidth: '600px',
     marginLeft: 'auto',
     marginRight: 'auto'

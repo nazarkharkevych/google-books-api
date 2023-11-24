@@ -2,6 +2,7 @@
   "name": "book-api-test",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://nazarkharkevych.github.io/google-books-api",
   "main": "index.js",
   "keywords": [],
   "author": "",
@@ -10,7 +11,9 @@
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production",
-    "start": "webpack serve --hot --mode development"
+    "start": "webpack serve --hot --mode development",
+    "predeploy": "npm run build-prod",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -38,6 +41,7 @@
     "css-loader": "^6.8.1",
     "dotenv-webpack": "^8.0.1",
     "file-loader": "^6.2.0",
+    "gh-pages": "^6.1.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "ts-loader": "^9.5.1",
