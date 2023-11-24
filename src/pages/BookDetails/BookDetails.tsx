@@ -85,7 +85,7 @@ const BookDetails = () => {
 
               <Grid item xs={1} sm={8} md={7} lg={9}>
                 <Stack spacing={3} sx={(theme) => ({
-                  alignItems: 'start',
+                  textAlign: 'start',
                   [theme.breakpoints.up('sm')]: {
                     padding: '1rem',
                   },
@@ -108,9 +108,12 @@ const BookDetails = () => {
                     {foundBook.volumeInfo.authors?.join(', ') || '*no authors*'}
                   </StyledTextGrey>
 
-                  <Paper variant="outlined" sx={{
+                  <Paper variant="outlined" sx={(theme) => ({
                     padding: '1rem',
-                  }}>
+                    [theme.breakpoints.up('lg')]: {
+                      maxWidth: '600px',
+                    }
+                  })}>
                     <Typography textAlign={'start'}>
                       {foundBook.volumeInfo.description || '*no description*'}
                     </Typography>
