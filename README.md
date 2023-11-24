@@ -25,3 +25,7 @@ npm run build-dev
 ## Running
 
 Open the file `dist/index.html` in your browser
+
+## Deployed app
+
+https://nazarkharkevych.github.io/google-books-api/
