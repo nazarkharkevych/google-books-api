@@ -78,6 +78,7 @@ const BookDetails = () => {
                   <Image
                     src={foundBook.volumeInfo.imageLinks?.thumbnail || ''}
                     duration={0}
+                    fit="initial"
                   />
                 </StyledImageContainer>
               </Grid>
